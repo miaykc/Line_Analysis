@@ -1,0 +1,18 @@
+.input {
+    display: none;
+}
+
+.uploadimage{
+    height:25px;
+    width: 80px;
+    background-color: gray;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
