@@ -3,10 +3,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import Layout from "./pages/Layout";
-import About from "./pages/About";
-import Flashcard from "./pages/Flashcard";
+import Upload from "./pages/Upload";
+import Analysis from "./pages/Analysis";
 import Home from "./pages/Home";
-import Translate from "./pages/Translate";
+import Aboutus from "./pages/Aboutus";
 
 import reportWebVitals from "./reportWebVitals";
 
@@ -16,9 +16,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="Analysis" element={<Flashcard />} />
-          <Route path="Upload" element={<About />} />
-          <Route path="Aboutus" element={<Translate />} />
+          <Route path="Analysis" element={<Analysis />} />
+          <Route path="Upload" element={<Upload />} />
+          <Route path="Aboutus" element={<Aboutus />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -1,9 +1,8 @@
 import React, { component } from "react";
-import "../Uploads/uploads.css";
 import { useState } from "react";
 import "../App.css";
 
-function ImageUpload() {
+function Upload() {
   const [VLAU, setVLAU] = useState("");
   const [conasfoa, setconasfoa] = useState("");
   const [inputValue, setInputValue] = useState("");
@@ -58,4 +57,4 @@ function ImageUpload() {
   );
 }
 
-export default ImageUpload;
+export default Upload;
