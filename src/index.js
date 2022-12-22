@@ -16,9 +16,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="Flashcard" element={<Flashcard />} />
-          <Route path="About" element={<About />} />
-          <Route path="Translate" element={<Translate />} />
+          <Route path="Analysis" element={<Flashcard />} />
+          <Route path="Upload" element={<About />} />
+          <Route path="Aboutus" element={<Translate />} />
         </Route>
       </Routes>
     </BrowserRouter>

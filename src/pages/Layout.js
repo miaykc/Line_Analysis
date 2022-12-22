@@ -19,15 +19,15 @@ const Layout = () => {
             <button className="button">首頁</button>
           </Link>
 
-          <Link to="/About">
-            <button className="button">分析</button>
+          <Link to="/Upload">
+            <button className="button">檔案上傳</button>
           </Link>
 
-          <Link to="/Flashcard">
-            <button className="button">其他東西</button>
+          <Link to="/Analysis">
+            <button className="button">情緒分析</button>
           </Link>
 
-          <Link to="/Translate">
+          <Link to="/Aboutus">
             <button className="button">關於我們</button>
           </Link>
         </ul>

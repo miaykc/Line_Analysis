@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import sentiment from "sentiment-zh_cn_web";
-
+import Chinese from "chinese-s2t"
 class Flashcard extends Component {
   constructor(props) {
     super(props);
@@ -12,21 +12,22 @@ class Flashcard extends Component {
   }
 
   findSentiment(event) {
-    const result = sentiment(event.target.value);
+    const s2tResult = Chinese.t2s(event.target.value)
+    const result = sentiment(s2tResult);
     this.setState({
       sentimentScore: result.score,
     });
     if (result.score < 0) {
       this.setState({
-        generalSentiment: "Negative",
+        generalSentiment: "岌岌可危😰🤯😱",
       });
     } else if (result.score > 0) {
       this.setState({
-        generalSentiment: "Positive",
+        generalSentiment: "不錯不錯🥰🥳🤭",
       });
     } else {
       this.setState({
-        generalSentiment: "Neutral",
+        generalSentiment: "還...ok🤔😌😶‍🌫️",
       });
     }
   }
@@ -37,8 +38,8 @@ class Flashcard extends Component {
         <h2>Sentiment Analysis in Line</h2>
         <p>Enter text for real-time analysis:</p>
         <textarea onChange={this.findSentiment} />
-        <p>Sentiment Score: {this.state.sentimentScore}</p>
-        <p>General Sentiment: {this.state.generalSentiment}</p>
+        <p>關係分數: {this.state.sentimentScore}</p>
+        <p>你們的關係: {this.state.generalSentiment}</p>
       </div>
     );
   }
