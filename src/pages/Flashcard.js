@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import Sentiment from "sentiment";
+import sentiment from "sentiment-zh_cn_web";
 
-const sentiment = new Sentiment();
 class Flashcard extends Component {
   constructor(props) {
     super(props);
@@ -13,7 +12,7 @@ class Flashcard extends Component {
   }
 
   findSentiment(event) {
-    const result = sentiment.analyze(event.target.value);
+    const result = sentiment(event.target.value);
     this.setState({
       sentimentScore: result.score,
     });

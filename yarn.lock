@@ -1040,6 +1040,13 @@
   dependencies:
     regenerator-runtime "^0.13.10"
 
+"@babel/runtime@^7.7.2":
+  version "7.20.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.20.6.tgz#facf4879bfed9b5326326273a64220f099b0fce3"
+  integrity sha512-Q+8MqP7TiHMWzSfwiJwXCjyf4GYA4Dgw3emg/7xmwsdLJOZUp+nMqcOwOzzYheuM1rhDu8FSj2l0aoMygEuXuA==
+  dependencies:
+    regenerator-runtime "^0.13.11"
+
 "@babel/template@^7.18.10", "@babel/template@^7.3.3":
   version "7.18.10"
   resolved "https://registry.npmjs.org/@babel/template/-/template-7.18.10.tgz"
@@ -2702,6 +2709,15 @@ babel-plugin-jest-hoist@^27.5.1:
     "@types/babel__core" "^7.0.0"
     "@types/babel__traverse" "^7.0.6"
 
+babel-plugin-macros@^2.6.1:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-macros/-/babel-plugin-macros-2.8.0.tgz#0f958a7cc6556b1e65344465d99111a1e5e10138"
+  integrity sha512-SEP5kJpfGYqYKpBrj5XU3ahw5p5GOHJ0U5ssOSQ/WBVdwkD2Dzlce95exQTs3jOVWPPKLBN2rlEWkCK7dSmLvg==
+  dependencies:
+    "@babel/runtime" "^7.7.2"
+    cosmiconfig "^6.0.0"
+    resolve "^1.12.0"
+
 babel-plugin-macros@^3.1.0:
   version "3.1.0"
   resolved "https://registry.npmjs.org/babel-plugin-macros/-/babel-plugin-macros-3.1.0.tgz"
@@ -2739,6 +2755,15 @@ babel-plugin-polyfill-regenerator@^0.4.1:
   integrity sha512-NtQGmyQDXjQqQ+IzRkBVwEOz9lQ4zxAQZgoAYEtU9dJjnl1Oc98qnN7jcp+bE7O7aYzVpavXE3/VKXNzUbh7aw==
   dependencies:
     "@babel/helper-define-polyfill-provider" "^0.3.3"
+
+babel-plugin-preval@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-preval/-/babel-plugin-preval-4.0.0.tgz#edb8501167985752aafcc31086791e1314052e9d"
+  integrity sha512-fZI/4cYneinlj2k/FsXw0/lTWSC5KKoepUueS1g25Gb5vx3GrRyaVwxWCshYqx11GEU4mZnbbFhee8vpquFS2w==
+  dependencies:
+    "@babel/runtime" "^7.7.2"
+    babel-plugin-macros "^2.6.1"
+    require-from-string "^2.0.2"
 
 babel-plugin-transform-react-remove-prop-types@^0.4.24:
   version "0.4.24"
@@ -6042,6 +6067,11 @@ locate-path@^6.0.0:
   dependencies:
     p-locate "^5.0.0"
 
+lodash.assign@4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/lodash.assign/-/lodash.assign-4.1.0.tgz#7cb262f1f76f865626adca7be4d419d51fb8a8c1"
+  integrity sha512-+Fjy5btNBLSALL+nTVYe0qmc3DDYf9OvupsPpc0oC9ja0U+eLkCXZ4DJJ3paa37b8lTkT+hTJZ3sJgne1MliyQ==
+
 lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.npmjs.org/lodash.debounce/-/lodash.debounce-4.0.8.tgz"
@@ -7266,6 +7296,13 @@ pretty-format@^29.0.0, pretty-format@^29.3.1:
     ansi-styles "^5.0.0"
     react-is "^18.0.0"
 
+preval.macro@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/preval.macro/-/preval.macro-4.0.0.tgz#24218fa36f68bf8a01a8c65c45d19a3ccad6496c"
+  integrity sha512-sJJnE71X+MPr64CVD2AurmUj4JEDqbudYbStav3L9Xjcqm4AR0ymMm6sugw1mUmfI/7gw4JWA4JXo/k6w34crw==
+  dependencies:
+    babel-plugin-preval "^4.0.0"
+
 process-nextick-args@~2.0.0:
   version "2.0.1"
   resolved "https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz"
@@ -7594,6 +7631,11 @@ regenerator-runtime@^0.13.10, regenerator-runtime@^0.13.9:
   resolved "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.10.tgz"
   integrity sha512-KepLsg4dU12hryUO7bp/axHAKvwGOCV0sGloQtpagJ12ai+ojVDqkeGSiRX1zlq+kjIMZ1t7gpze+26QqtdGqw==
 
+regenerator-runtime@^0.13.11:
+  version "0.13.11"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz#f6dca3e7ceec20590d07ada785636a90cdca17f9"
+  integrity sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==
+
 regenerator-transform@^0.15.0:
   version "0.15.0"
   resolved "https://registry.npmjs.org/regenerator-transform/-/regenerator-transform-0.15.0.tgz"
@@ -7708,7 +7750,7 @@ resolve.exports@^1.1.0:
   resolved "https://registry.npmjs.org/resolve.exports/-/resolve.exports-1.1.0.tgz"
   integrity sha512-J1l+Zxxp4XK3LUDZ9m60LRJF/mAe4z6a4xyabPHk7pvK5t35dACV32iIjJDFeWZFfZlO29w6SZ67knR0tHzJtQ==
 
-resolve@^1.1.7, resolve@^1.14.2, resolve@^1.19.0, resolve@^1.20.0, resolve@^1.22.0, resolve@^1.22.1:
+resolve@^1.1.7, resolve@^1.12.0, resolve@^1.14.2, resolve@^1.19.0, resolve@^1.20.0, resolve@^1.22.0, resolve@^1.22.1:
   version "1.22.1"
   resolved "https://registry.npmjs.org/resolve/-/resolve-1.22.1.tgz"
   integrity sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==
@@ -7860,6 +7902,13 @@ schema-utils@^4.0.0:
     ajv-formats "^2.1.1"
     ajv-keywords "^5.0.0"
 
+segmentit@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/segmentit/-/segmentit-2.0.3.tgz#799897667acbc518b27811acdb2a341a79c7973f"
+  integrity sha512-7mn2XL3OdTUQ+AhHz7SbgyxLTaQRzTWQNVwiK+UlTO8aePGbSwvKUzTwE4238+OUY9MoR6ksAg35zl8sfTunQQ==
+  dependencies:
+    preval.macro "^4.0.0"
+
 select-hose@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/select-hose/-/select-hose-2.0.0.tgz"
@@ -7902,6 +7951,14 @@ send@0.18.0:
     on-finished "2.4.1"
     range-parser "~1.2.1"
     statuses "2.0.1"
+
+sentiment-zh_cn_web@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/sentiment-zh_cn_web/-/sentiment-zh_cn_web-1.0.2.tgz#6fe2d29f26d3134f389ca83be4ac21fb48e99a58"
+  integrity sha512-EwuFJb6Wsqr1Zej4PqdX2MrDK5supnCv3FdAjnhc8GxOZLLn+WWQTFfyb+EdHXRHdBGn9I3b5mE7VW2RL20hUg==
+  dependencies:
+    lodash.assign "4.1.0"
+    segmentit "^2.0.3"
 
 sentiment@^5.0.2:
   version "5.0.2"
