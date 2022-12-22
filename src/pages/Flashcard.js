@@ -19,7 +19,7 @@ class Flashcard extends Component {
     });
     if (result.score < 0) {
       this.setState({
-        generalSentiment: "岌岌可危😰🤯😱",
+        generalSentiment: "森氣氣or桑心😰🤯😱",
       });
     } else if (result.score > 0) {
       this.setState({
@@ -35,11 +35,11 @@ class Flashcard extends Component {
   render() {
     return (
       <div className="App">
-        <h2>Sentiment Analysis in Line</h2>
-        <p>Enter text for real-time analysis:</p>
+        <h2>話中有話｜他心情如何🥰</h2>
+        <p>請貼上你想分析的一句對話紀錄</p>
         <textarea onChange={this.findSentiment} />
-        <p>關係分數: {this.state.sentimentScore}</p>
-        <p>你們的關係: {this.state.generalSentiment}</p>
+        <p>開心指數: {this.state.sentimentScore}</p>
+        <p>他覺得: {this.state.generalSentiment}</p>
       </div>
     );
   }
