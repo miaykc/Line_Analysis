@@ -6,6 +6,7 @@ import "../App.css";
 function ImageUpload() {
   const [VLAU, setVLAU] = useState("");
   const [conasfoa, setconasfoa] = useState("");
+  const [inputValue, setInputValue] = useState("");
 
   const Maikaload = (event) => {
     const reader = new FileReader();
@@ -46,7 +47,11 @@ function ImageUpload() {
           flexDirection: "column",
         }}
       >
-        <input type="file" onChange={Maikaload} style={{marginBottom: 20}}></input>
+        <input
+          type="file"
+          onChange={Maikaload}
+          style={{ marginBottom: 20 }}
+        ></input>
         <textarea cols="30" rows="20" value={conasfoa}></textarea>
       </div>
     </div>
