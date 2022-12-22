@@ -1,10 +1,10 @@
 import "../styles.css";
 
-import chat1 from "/Users/ykcmia/React_lineconvo3/assignment/src/pages/chat1.png"
-import chat2 from "/Users/ykcmia/React_lineconvo3/assignment/src/pages/chat2.png"
-import chat3 from  "/Users/ykcmia/React_lineconvo3/assignment/src/pages/chat3.png"
-import chat4 from  "/Users/ykcmia/React_lineconvo3/assignment/src/pages/chat4.png"
-import chat5 from  "/Users/ykcmia/React_lineconvo3/assignment/src/pages/chat5.png"
+import chat1 from "./chat1.png"
+import chat2 from "./chat2.png"
+import chat3 from  "./chat3.png"
+import chat4 from  "./chat4.png"
+import chat5 from  "./chat5.png"
 
 
 

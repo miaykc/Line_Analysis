@@ -1,7 +1,7 @@
 import "../styles.css";
-import Joanne from "/Users/ykcmia/React_lineconvo3/assignment/src/pages/Joanne.png"
-import Mia from "/Users/ykcmia/React_lineconvo3/assignment/src/pages/Mia.png"
-import Maika from  "/Users/ykcmia/React_lineconvo3/assignment/src/pages/Maika.png"
+import Joanne from "./Joanne.png"
+import Mia from "./Mia.png"
+import Maika from  "./Maika.png"
 
 
 
