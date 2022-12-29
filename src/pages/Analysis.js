@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import sentiment from "sentiment-zh_cn_web";
-import Chinese from "chinese-s2t";
+import sentiment from "sentiment-zh_cn_web"; //中文情緒分析
+import Chinese from "chinese-s2t"; //簡轉繁
 
+// 
 class Analysis extends Component {
   constructor(props) {
     super(props);
@@ -13,10 +14,10 @@ class Analysis extends Component {
   }
 
   findSentiment(event) {
-    const s2tResult = Chinese.t2s(event.target.value);
-    const result = sentiment(s2tResult);
+    const s2tResult = Chinese.t2s(event.target.value); //宣告「簡轉繁」物件
+    const result = sentiment(s2tResult); //宣告「中文情緒分析」物件，並將自動「簡轉繁」的功能插入
     this.setState({
-      sentimentScore: result.score,
+      sentimentScore: result.score, //用setState將結果持續顯示在視窗上
     });
     if (result.score < 0) {
       this.setState({

@@ -30,26 +30,35 @@ Email: R11142010@ntu.edu.tw -->
 <br>
 
 ### 📍 **自我評估**
-
 - motivation
-- impact/
+  - 希望可以運用課堂教的技巧，包含學期初教的sentiment analysis，到學期中的HTML和Javascript，以及學期中後段的react來設計一個網頁。
+- impact 
+  - 利用情緒分析line聊天記錄，以了解與朋友之間的對話情緒，近一步了解與朋友之間的關係。
 - design
-  - HTML, CSS
+  -  HTML, CSS, Material UI (https://mui.com/)
 - method
-  - React, NPM API
-- data/
-- ethics
+  - React, npm
+- data
+  - 個人聊天記錄.txt
+- API
+  - https://www.npmjs.com/package/chinese-s2t (簡轉繁)
+  - https://www.npmjs.com/package/sentiment-zh_cn_web （中文情緒分析）
+- ethics 
+  - 無違反倫理。所使用的聊天記錄皆來自個人擁有，且此 webpage 僅接到前端，未連接於後端，被上傳的聊天記錄不會被留存下來。
+ 
 
 <br>
 
 ### 📍**code folder organization**
 
-- main codes in;
-- Layout.js/ React router
-- Home.js/
-- Upload.js/
-- Analysis.js/
-- Aboutus.js/
+- main codes in; src/pages
+  - Layout.js/ 
+  - Home.js/ 首頁
+  - Upload.js/ 檔案上傳 
+  - Analysis.js/ 情緒分析 
+  - Aboutus.js/ 個人介紹 
+- index.js/ 用 React router來分頁
+
 
 <br>
 

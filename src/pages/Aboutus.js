@@ -2,10 +2,8 @@ import "../styles.css";
 import Joanne from "./pics/Joanne.png";
 import Mia from "./pics/Mia.png";
 import Maika from "./pics/Maika.png";
-import MediaCard from "./mediacard";
 
-import { Box, Grid } from "@mui/material";
-
+// 
 function Aboutus() {
   return (
     <>

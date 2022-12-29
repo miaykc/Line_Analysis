@@ -4,7 +4,8 @@ const Layout = () => {
   return (
     <>
       <div>
-        <h1 className="title1">LINE對話分析</h1>
+      {/* 標題 */}
+        <h1 className="title1">LINE對話分析</h1>      
 
         <nav style={{ align: "center" }}>
           <ul>

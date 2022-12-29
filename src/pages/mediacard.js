@@ -10,6 +10,8 @@ import Joanne from "./pics/Joanne.png";
 import Mia from "./pics/Mia.png";
 import "../styles.css";
 
+
+
 export default function MediaCard() {
   return (
     <>

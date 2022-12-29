@@ -1,5 +1,6 @@
 import "../styles.css";
 
+//將如何匯出Line對話的教學截圖，並且將webpage會呈現的結果也截圖放在首頁
 import chat1 from "./pics/chat1.png";
 import chat2 from "./pics/chat2.png";
 import chat3 from "./pics/chat3.png";
@@ -9,6 +10,7 @@ import chat5 from "./pics/chat5.png";
 function Home() {
   return (
     <>
+    {/* 標題 */}
       <div className="article">
         <h2>首頁/Home</h2>
         <h1> 將聊天記錄匯出 👉🏻 選取並複製特定文字 👉🏻 貼上所選文字並進行分析</h1>
