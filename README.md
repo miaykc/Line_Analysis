@@ -1,3 +1,65 @@
+# NLP and Web Applications - Final Report
+
+### 📍 人員
+
+<!-- 姓名：**紀柔安** 學號：R11142005
+Email: R11142005@ntu.edu.tw
+
+姓名：**葉凱晴**
+學號：R11142006
+Email: R11142006@ntu.edu.tw
+
+姓名：**橘內每歌**
+學號：R11142010
+Email: R11142010@ntu.edu.tw -->
+
+| 姓名         |      學號 |        Email         |
+| :----------- | --------: | :------------------: |
+| **紀柔安**   | R11142005 | R11142005@ntu.edu.tw |
+| **葉凱晴**   | R11142006 | R11142006@ntu.edu.tw |
+| **橘內每歌** | R11142010 | R11142010@ntu.edu.tw |
+
+<br>
+
+### 📍 **簡介**
+
+#### **LINE 對話分析 App**
+
+> 將聊天記錄匯出 👉🏻 選取並複製特定文字 👉🏻 貼上所選文字並進行分析
+
+<br>
+
+### 📍 **自我評估**
+
+- motivation
+- impact/
+- design
+  - HTML, CSS
+- method
+  - React, NPM API
+- data/
+- ethics
+
+<br>
+
+### 📍**code folder organization**
+
+- main codes in;
+- Layout.js/ React router
+- Home.js/
+- Upload.js/
+- Analysis.js/
+- Aboutus.js/
+
+<br>
+
+### 📍**code 上的註解**
+
+---
+
+<br>
+<br>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

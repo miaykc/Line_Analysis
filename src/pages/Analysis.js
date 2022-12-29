@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import sentiment from "sentiment-zh_cn_web";
 import Chinese from "chinese-s2t";
+
 class Analysis extends Component {
   constructor(props) {
     super(props);
@@ -35,12 +36,25 @@ class Analysis extends Component {
   render() {
     return (
       <div className="App">
-        <h2>話中有話｜他心情如何🥰</h2>
+        <h2>情緒分析/Sentiment Analysis</h2>
+        <h3>話中有話｜他心情如何🥰</h3>
         <p>請貼上你想分析的一句對話紀錄</p>
-        <textarea cols="50" rows="5" onChange={this.findSentiment} />
-        <p>森氣氣or桑心😰🤯😱</p>
-        <p>不錯不錯🥰🥳🤭</p>
-        <p>還...ok🤔😌😶‍🌫️</p>
+        <textarea
+          cols="50"
+          rows="5"
+          name="example"
+          spellcheck="true"
+          placeholder="20字まで"
+          // maxlength="20"
+          onChange={this.findSentiment}
+        />
+
+        <ul class="list_test-wrap">
+          <li class="list_test">森氣氣or桑心😰🤯😱</li>
+          <li class="list_test">不錯不錯🥰🥳🤭</li>
+          <li class="list_test">還...ok🤔😌😶‍🌫️</li>
+          <button type="submit">分析</button>
+        </ul>
         <p>開心指數:👉 {this.state.sentimentScore}</p>
         <p>他覺得:👉 {this.state.generalSentiment}</p>
       </div>

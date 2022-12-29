@@ -3,14 +3,14 @@ import { useState } from "react";
 import "../App.css";
 
 function Upload() {
-  const [VLAU, setVLAU] = useState("");
-  const [conasfoa, setconasfoa] = useState("");
+  const [Value, setValue] = useState("");
+  const [txt, setTxt] = useState("");
   const [inputValue, setInputValue] = useState("");
 
-  const Maikaload = (event) => {
+  const Txtload = (event) => {
     const reader = new FileReader();
     reader.onload = () => {
-      setVLAU(reader.result);
+      setValue(reader.result);
     };
     let files = event.target.value;
 
@@ -21,7 +21,7 @@ function Upload() {
       "load",
       () => {
         // this will then display a text file
-        setconasfoa(reader.result);
+        setTxt(reader.result);
       },
       false
     );
@@ -34,11 +34,12 @@ function Upload() {
     reader.onerror = (e) => alert(e.target.error.name);
 
     reader.readAsText(file);
-    setconasfoa(reader.result);
+    setTxt(reader.result);
   };
-  console.log(VLAU);
+  console.log(Value);
   return (
     <div>
+      <h2>檔案上傳/File Upload</h2>
       <div
         style={{
           display: "flex",
@@ -46,12 +47,15 @@ function Upload() {
           flexDirection: "column",
         }}
       >
-        <input
-          type="file"
-          onChange={Maikaload}
-          style={{ marginBottom: 20 }}
-        ></input>
-        <textarea cols="30" rows="20" value={conasfoa}></textarea>
+        <label>
+          <input
+            type="file"
+            onChange={Txtload}
+            style={{ marginBottom: 20 }}
+          ></input>
+          選擇檔案📂
+        </label>
+        <textarea cols="30" rows="20" value={txt}></textarea>
       </div>
     </div>
   );
