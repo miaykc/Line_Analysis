@@ -51,11 +51,7 @@ function Aboutus() {
           </div>
         </div>
       </div>
-      <Box p={5}>
-        <Grid container spacing={0}>
-          <MediaCard />
-        </Grid>
-      </Box>
+
     </>
   );
 }
